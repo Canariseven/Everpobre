@@ -14,7 +14,12 @@
 
 @implementation AGTNoteBooksViewController
 -(void)viewDidLoad{
+    [super viewDidLoad];
     self.title = @"EverPobre";
+    [self addNewNoteBookButton];
+    
+    // Edit Button
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -36,5 +41,24 @@
     return cell;
     
 }
-
+-(void)tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath{
+    AGTNoteBook *nt = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    [self.fetchedResultsController.managedObjectContext deleteObject:nt];
+}
+#pragma mark - Utils
+-(void)addNewNoteBookButton{
+    UIBarButtonItem * add = [[UIBarButtonItem alloc]
+                             initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                             target:self
+                             action:@selector(addNewNoteBook:)];
+    
+    self.navigationItem.rightBarButtonItem = add;
+}
+#pragma mark - Actions
+-(void)addNewNoteBook:(id)sender{
+    [AGTNoteBook notebookWithName:@"Nueva libreta"
+                          context:self.fetchedResultsController.managedObjectContext];
+}
 @end

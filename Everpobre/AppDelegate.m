@@ -92,7 +92,7 @@
                                  notebook:exs
                                   context:self.stack.context];
     
-    NSLog(@"Una nota: %@",vega);
+//    NSLog(@"Una nota: %@",vega);
     
     // Buscar
     NSFetchRequest *req = [NSFetchRequest
@@ -110,7 +110,7 @@
                                                 NSLog(@"Error al buscar! %@",error.localizedDescription);
                                             }];
     
-    NSLog(@"%@",results);
+//    NSLog(@"%@",results);
     
     // Borrar
     [self.stack.context deleteObject:vega];
