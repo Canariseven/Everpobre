@@ -60,7 +60,7 @@
     AGTNoteBook *exs = [AGTNoteBook notebookWithName:@"Ex-novias para el recuerdo"
                                              context:self.stack.context];
     
-    
+
 }
 
 @end
