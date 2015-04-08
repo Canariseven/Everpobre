@@ -1,5 +1,5 @@
 #import "_AGTNoteBook.h"
 
 @interface AGTNoteBook : _AGTNoteBook {}
-// Custom logic goes here.
++(instancetype)notebookWithName:(NSString *)name context:(NSManagedObjectContext *)context;
 @end

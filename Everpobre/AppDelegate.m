@@ -5,11 +5,13 @@
 //  Created by Carmelo Ruymán Quintana Santana on 7/4/15.
 //  Copyright (c) 2015 Carmelo Ruymán Quintana Santana. All rights reserved.
 //
-
+#import "AGTNote.h"
+#import "AGTNoteBook.h"
+#import "AGTCoreDataStack.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) AGTCoreDataStack * stack;
 @end
 
 @implementation AppDelegate
@@ -18,6 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    
+    // Creamos una instancia del stack
+    self.stack  = [AGTCoreDataStack coreDataStackWithModelName:@"Model"];
+    // Creamos datos chorras
+    [self createDummyData];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -45,4 +54,24 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Utils
+-(void) createDummyData{
+    
+    AGTNoteBook *exs = [AGTNoteBook notebookWithName:@"Ex-novias para el recuerdo"
+                                             context:self.stack.context];
+    
+    
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+

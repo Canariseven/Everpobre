@@ -8,6 +8,15 @@
 
 @implementation AGTNoteBook
 
-// Custom logic goes here.
++(instancetype)notebookWithName:(NSString *)name
+                        context:(NSManagedObjectContext *)context{
+    
+    AGTNoteBook *nb = [self insertInManagedObjectContext:context];
+    nb.name = name;
+    nb.creationDate = [NSDate date];
+    nb.modificationDate = [NSDate date];
+    
+    return nb;
+}
 
 @end
