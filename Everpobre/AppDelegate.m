@@ -8,8 +8,9 @@
 #import "AGTNote.h"
 #import "AGTNoteBook.h"
 #import "AGTCoreDataStack.h"
+#import "AGTNoteBooksViewController.h"
 #import "AppDelegate.h"
-
+#import "UIViewController+Navigation.h"
 @interface AppDelegate ()
 @property (nonatomic, strong) AGTCoreDataStack * stack;
 @end
@@ -27,6 +28,23 @@
     // Creamos datos chorras
     [self createDummyData];
     
+    // Un fetchRequest
+    NSFetchRequest * req = [NSFetchRequest fetchRequestWithEntityName:[AGTNoteBook entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AGTNoteBookAttributes.name
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)],
+                            [NSSortDescriptor sortDescriptorWithKey:AGTNoteBookAttributes.modificationDate
+                                                          ascending:NO]];
+    req.fetchBatchSize = 20;
+    // FetchedResultsController
+    NSFetchedResultsController * fc= [[NSFetchedResultsController alloc]
+                                      initWithFetchRequest:req
+                                      managedObjectContext:self.stack.context
+                                      sectionNameKeyPath:nil
+                                      cacheName:nil];
+    // Creamos el controlador
+    AGTNoteBooksViewController *nVC= [[AGTNoteBooksViewController alloc] initWithFetchedResultsController:fc style:UITableViewStylePlain];
+    self.window.rootViewController = [nVC wrappedInNavigation];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

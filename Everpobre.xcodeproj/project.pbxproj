@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322D05ED1AD5D519000D8E54 /* AGTNoteBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D05EC1AD5D519000D8E54 /* AGTNoteBooksViewController.m */; };
+		322D05F21AD5DC1E000D8E54 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 322D05F11AD5DC1E000D8E54 /* UIViewController+Navigation.m */; };
 		32A5BF7C1AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF751AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m */; };
 		32A5BF7D1AD5ACCD00C79713 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF771AD5ACCD00C79713 /* AGTCoreDataStack.m */; };
 		32A5BF7E1AD5ACCD00C79713 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF791AD5ACCD00C79713 /* AGTCoreDataTableViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		322D05EB1AD5D519000D8E54 /* AGTNoteBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNoteBooksViewController.h; sourceTree = "<group>"; };
+		322D05EC1AD5D519000D8E54 /* AGTNoteBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNoteBooksViewController.m; sourceTree = "<group>"; };
+		322D05F01AD5DC1E000D8E54 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		322D05F11AD5DC1E000D8E54 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
 		32A5BF741AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
 		32A5BF751AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
 		32A5BF761AD5ACCD00C79713 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
@@ -90,15 +96,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32A5BF801AD5ACE400C79713 /* CoreData Utils */ = {
+		322D05EA1AD5D3C8000D8E54 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				322D05EE1AD5D52B000D8E54 /* CoreData Utils */,
+				322D05EB1AD5D519000D8E54 /* AGTNoteBooksViewController.h */,
+				322D05EC1AD5D519000D8E54 /* AGTNoteBooksViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		322D05EE1AD5D52B000D8E54 /* CoreData Utils */ = {
 			isa = PBXGroup;
 			children = (
 				32A5BF741AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.h */,
 				32A5BF751AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m */,
-				32A5BF761AD5ACCD00C79713 /* AGTCoreDataStack.h */,
-				32A5BF771AD5ACCD00C79713 /* AGTCoreDataStack.m */,
 				32A5BF781AD5ACCD00C79713 /* AGTCoreDataTableViewController.h */,
 				32A5BF791AD5ACCD00C79713 /* AGTCoreDataTableViewController.m */,
+			);
+			name = "CoreData Utils";
+			sourceTree = "<group>";
+		};
+		322D05EF1AD5DB9C000D8E54 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				322D05F01AD5DC1E000D8E54 /* UIViewController+Navigation.h */,
+				322D05F11AD5DC1E000D8E54 /* UIViewController+Navigation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		32A5BF801AD5ACE400C79713 /* CoreData Utils */ = {
+			isa = PBXGroup;
+			children = (
+				32A5BF761AD5ACCD00C79713 /* AGTCoreDataStack.h */,
+				32A5BF771AD5ACCD00C79713 /* AGTCoreDataStack.m */,
 				32A5BF7A1AD5ACCD00C79713 /* AGTEntityObserver.h */,
 				32A5BF7B1AD5ACCD00C79713 /* AGTEntityObserver.m */,
 			);
@@ -126,6 +158,8 @@
 		32B087CC1AD4794900D12298 /* Everpobre */ = {
 			isa = PBXGroup;
 			children = (
+				322D05EF1AD5DB9C000D8E54 /* Categories */,
+				322D05EA1AD5D3C8000D8E54 /* Controllers */,
 				32B087F01AD47AB900D12298 /* Models */,
 				32B087D11AD4794900D12298 /* AppDelegate.h */,
 				32B087D21AD4794900D12298 /* AppDelegate.m */,
@@ -292,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322D05F21AD5DC1E000D8E54 /* UIViewController+Navigation.m in Sources */,
 				32A5BF7D1AD5ACCD00C79713 /* AGTCoreDataStack.m in Sources */,
 				32A5BF7C1AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m in Sources */,
 				32A5BF7E1AD5ACCD00C79713 /* AGTCoreDataTableViewController.m in Sources */,
@@ -300,6 +335,7 @@
 				32B0880C1AD490E300D12298 /* _AGTNote.m in Sources */,
 				32B0880E1AD490E300D12298 /* _AGTPhoto.m in Sources */,
 				32A5BF831AD5C26C00C79713 /* AGTEverpobreBaseClass.m in Sources */,
+				322D05ED1AD5D519000D8E54 /* AGTNoteBooksViewController.m in Sources */,
 				32B087D01AD4794900D12298 /* main.m in Sources */,
 				32B0880D1AD490E300D12298 /* _AGTNoteBook.m in Sources */,
 				32A5BF7F1AD5ACCD00C79713 /* AGTEntityObserver.m in Sources */,
