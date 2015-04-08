@@ -2,6 +2,7 @@
 // Make changes to AGTNoteBook.h instead.
 
 @import CoreData;
+#import "AGTEverpobreBaseClass.h"
 
 extern const struct AGTNoteBookAttributes {
 	__unsafe_unretained NSString *creationDate;
@@ -18,7 +19,7 @@ extern const struct AGTNoteBookRelationships {
 @interface AGTNoteBookID : NSManagedObjectID {}
 @end
 
-@interface _AGTNoteBook : NSManagedObject {}
+@interface _AGTNoteBook : AGTEverpobreBaseClass {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

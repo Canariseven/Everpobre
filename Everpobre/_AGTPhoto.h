@@ -2,6 +2,7 @@
 // Make changes to AGTPhoto.h instead.
 
 @import CoreData;
+#import "AGTEverpobreBaseClass.h"
 
 extern const struct AGTPhotoAttributes {
 	__unsafe_unretained NSString *photoData;
@@ -16,7 +17,7 @@ extern const struct AGTPhotoRelationships {
 @interface AGTPhotoID : NSManagedObjectID {}
 @end
 
-@interface _AGTPhoto : NSManagedObject {}
+@interface _AGTPhoto : AGTEverpobreBaseClass {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

@@ -59,7 +59,11 @@
     
     AGTNoteBook *exs = [AGTNoteBook notebookWithName:@"Ex-novias para el recuerdo"
                                              context:self.stack.context];
-    
+    AGTNote *n = [AGTNote noteWithName:@"Mariana Dávalos"
+                              notebook:exs
+                               context:self.stack.context];
+    NSLog(@"Libreta: %@",exs);
+    NSLog(@"Nota: %@",n);
 
 }
 

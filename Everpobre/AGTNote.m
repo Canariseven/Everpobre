@@ -8,6 +8,13 @@
 
 @implementation AGTNote
 
+#pragma mark - Class Methods
++(NSArray *)observableKeys{
+    return @[AGTNoteAttributes.name,
+             AGTNoteAttributes.text,
+             AGTNoteRelationships.notebook,
+             @"photo.photoData"];
+}
 +(instancetype) noteWithName:(NSString *)name
                     notebook:(AGTNoteBook *)notebook
                      context:(NSManagedObjectContext *)context{
@@ -20,4 +27,11 @@
     return note;
 }
 
+-(void)observeValueForKeyPath:(NSString *)keyPath
+                     ofObject:(id)object
+                       change:(NSDictionary *)change
+                      context:(void *)context{
+    // Actualizo la modificatión
+    self.modificationDate = [NSDate date];
+}
 @end
