@@ -15,6 +15,7 @@
              AGTNoteRelationships.notebook,
              @"photo.photoData"];
 }
+
 +(instancetype) noteWithName:(NSString *)name
                     notebook:(AGTNoteBook *)notebook
                      context:(NSManagedObjectContext *)context{

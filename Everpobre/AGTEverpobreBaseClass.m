@@ -16,14 +16,14 @@
 
 #pragma mark - Life cycle
 -(void)awakeFromInsert{
-    [self awakeFromInsert];
+    [super awakeFromInsert];
     
     // Solo se produce una vez en la vida del objeto
     [self setupKVO];
 }
 
 -(void)awakeFromFetch{
-    [self awakeFromFetch];
+    [super awakeFromFetch];
     // Se produce n veces a lo largo de la vida del objeto
     [self setupKVO];
 }

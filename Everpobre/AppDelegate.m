@@ -56,15 +56,51 @@
 
 #pragma mark - Utils
 -(void) createDummyData{
+    // Elimino datos anteriores
+    [self.stack zapAllData];
     
     AGTNoteBook *exs = [AGTNoteBook notebookWithName:@"Ex-novias para el recuerdo"
                                              context:self.stack.context];
-    AGTNote *n = [AGTNote noteWithName:@"Mariana Dávalos"
-                              notebook:exs
-                               context:self.stack.context];
-    NSLog(@"Libreta: %@",exs);
-    NSLog(@"Nota: %@",n);
-
+    [AGTNote noteWithName:@"Mariana Dávalos"
+                 notebook:exs
+                  context:self.stack.context];
+    [AGTNote noteWithName:@"Camila Dávalos"
+                 notebook:exs
+                  context:self.stack.context];
+    [AGTNote noteWithName:@"Pampita"
+                 notebook:exs
+                  context:self.stack.context];
+    AGTNote *vega = [AGTNote noteWithName:@"María Teresa de la Vega"
+                                 notebook:exs
+                                  context:self.stack.context];
+    
+    NSLog(@"Una nota: %@",vega);
+    
+    // Buscar
+    NSFetchRequest *req = [NSFetchRequest
+                           fetchRequestWithEntityName:[AGTNote entityName]];
+    
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.name
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)],
+                            [NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.modificationDate
+                                                          ascending:NO]];
+    req.fetchBatchSize = 20;
+    req.predicate = [NSPredicate predicateWithFormat:@"notebook = %@",exs];
+    NSArray *results = [self.stack executeFetchRequest:req
+                                            errorBlock:^(NSError *error) {
+                                                NSLog(@"Error al buscar! %@",error.localizedDescription);
+                                            }];
+    
+    NSLog(@"%@",results);
+    
+    // Borrar
+    [self.stack.context deleteObject:vega];
+    
+    //Guardar
+    [self.stack saveWithErrorBlock:^(NSError *error) {
+        NSLog(@"Error al guardar! %@",error);
+    }];
 }
 
 @end

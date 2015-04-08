@@ -11,6 +11,7 @@
 		32A5BF7D1AD5ACCD00C79713 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF771AD5ACCD00C79713 /* AGTCoreDataStack.m */; };
 		32A5BF7E1AD5ACCD00C79713 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF791AD5ACCD00C79713 /* AGTCoreDataTableViewController.m */; };
 		32A5BF7F1AD5ACCD00C79713 /* AGTEntityObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF7B1AD5ACCD00C79713 /* AGTEntityObserver.m */; };
+		32A5BF831AD5C26C00C79713 /* AGTEverpobreBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF821AD5C26C00C79713 /* AGTEverpobreBaseClass.m */; };
 		32B087D01AD4794900D12298 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B087CF1AD4794900D12298 /* main.m */; };
 		32B087D31AD4794900D12298 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B087D21AD4794900D12298 /* AppDelegate.m */; };
 		32B087D51AD4794900D12298 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B087D41AD4794900D12298 /* Images.xcassets */; };
@@ -44,6 +45,8 @@
 		32A5BF791AD5ACCD00C79713 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		32A5BF7A1AD5ACCD00C79713 /* AGTEntityObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEntityObserver.h; sourceTree = "<group>"; };
 		32A5BF7B1AD5ACCD00C79713 /* AGTEntityObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEntityObserver.m; sourceTree = "<group>"; };
+		32A5BF811AD5C26C00C79713 /* AGTEverpobreBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEverpobreBaseClass.h; sourceTree = "<group>"; };
+		32A5BF821AD5C26C00C79713 /* AGTEverpobreBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEverpobreBaseClass.m; sourceTree = "<group>"; };
 		32B087CA1AD4794900D12298 /* Everpobre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Everpobre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B087CE1AD4794900D12298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32B087CF1AD4794900D12298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 				32B0880A1AD490E300D12298 /* AGTPhoto.h */,
 				32B0880B1AD490E300D12298 /* AGTPhoto.m */,
 				32B087ED1AD47AA800D12298 /* Model.xcdatamodeld */,
+				32A5BF811AD5C26C00C79713 /* AGTEverpobreBaseClass.h */,
+				32A5BF821AD5C26C00C79713 /* AGTEverpobreBaseClass.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				32B088101AD490E300D12298 /* AGTNoteBook.m in Sources */,
 				32B0880C1AD490E300D12298 /* _AGTNote.m in Sources */,
 				32B0880E1AD490E300D12298 /* _AGTPhoto.m in Sources */,
+				32A5BF831AD5C26C00C79713 /* AGTEverpobreBaseClass.m in Sources */,
 				32B087D01AD4794900D12298 /* main.m in Sources */,
 				32B0880D1AD490E300D12298 /* _AGTNoteBook.m in Sources */,
 				32A5BF7F1AD5ACCD00C79713 /* AGTEntityObserver.m in Sources */,
