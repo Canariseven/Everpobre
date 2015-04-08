@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32A5BF7C1AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF751AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m */; };
+		32A5BF7D1AD5ACCD00C79713 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF771AD5ACCD00C79713 /* AGTCoreDataStack.m */; };
+		32A5BF7E1AD5ACCD00C79713 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF791AD5ACCD00C79713 /* AGTCoreDataTableViewController.m */; };
+		32A5BF7F1AD5ACCD00C79713 /* AGTEntityObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BF7B1AD5ACCD00C79713 /* AGTEntityObserver.m */; };
 		32B087D01AD4794900D12298 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B087CF1AD4794900D12298 /* main.m */; };
 		32B087D31AD4794900D12298 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B087D21AD4794900D12298 /* AppDelegate.m */; };
 		32B087D51AD4794900D12298 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B087D41AD4794900D12298 /* Images.xcassets */; };
 		32B087D81AD4794900D12298 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B087D61AD4794900D12298 /* LaunchScreen.xib */; };
 		32B087E41AD4794A00D12298 /* EverpobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B087E31AD4794A00D12298 /* EverpobreTests.m */; };
 		32B087EF1AD47AA800D12298 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32B087ED1AD47AA800D12298 /* Model.xcdatamodeld */; };
-		32B087F51AD4869400D12298 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B087F21AD4869400D12298 /* AGTCoreDataStack.m */; };
-		32B087F61AD4869400D12298 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B087F41AD4869400D12298 /* AGTCoreDataTableViewController.m */; };
 		32B0880C1AD490E300D12298 /* _AGTNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B088011AD490E300D12298 /* _AGTNote.m */; };
 		32B0880D1AD490E300D12298 /* _AGTNoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B088031AD490E300D12298 /* _AGTNoteBook.m */; };
 		32B0880E1AD490E300D12298 /* _AGTPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B088051AD490E300D12298 /* _AGTPhoto.m */; };
@@ -34,6 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32A5BF741AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
+		32A5BF751AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
+		32A5BF761AD5ACCD00C79713 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		32A5BF771AD5ACCD00C79713 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
+		32A5BF781AD5ACCD00C79713 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		32A5BF791AD5ACCD00C79713 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		32A5BF7A1AD5ACCD00C79713 /* AGTEntityObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTEntityObserver.h; sourceTree = "<group>"; };
+		32A5BF7B1AD5ACCD00C79713 /* AGTEntityObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTEntityObserver.m; sourceTree = "<group>"; };
 		32B087CA1AD4794900D12298 /* Everpobre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Everpobre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B087CE1AD4794900D12298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32B087CF1AD4794900D12298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,10 +55,6 @@
 		32B087E21AD4794A00D12298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32B087E31AD4794A00D12298 /* EverpobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverpobreTests.m; sourceTree = "<group>"; };
 		32B087EE1AD47AA800D12298 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		32B087F11AD4869400D12298 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
-		32B087F21AD4869400D12298 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
-		32B087F31AD4869400D12298 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
-		32B087F41AD4869400D12298 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		32B088001AD490E300D12298 /* _AGTNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AGTNote.h; sourceTree = "<group>"; };
 		32B088011AD490E300D12298 /* _AGTNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _AGTNote.m; sourceTree = "<group>"; };
 		32B088021AD490E300D12298 /* _AGTNoteBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AGTNoteBook.h; sourceTree = "<group>"; };
@@ -81,6 +87,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32A5BF801AD5ACE400C79713 /* CoreData Utils */ = {
+			isa = PBXGroup;
+			children = (
+				32A5BF741AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.h */,
+				32A5BF751AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m */,
+				32A5BF761AD5ACCD00C79713 /* AGTCoreDataStack.h */,
+				32A5BF771AD5ACCD00C79713 /* AGTCoreDataStack.m */,
+				32A5BF781AD5ACCD00C79713 /* AGTCoreDataTableViewController.h */,
+				32A5BF791AD5ACCD00C79713 /* AGTCoreDataTableViewController.m */,
+				32A5BF7A1AD5ACCD00C79713 /* AGTEntityObserver.h */,
+				32A5BF7B1AD5ACCD00C79713 /* AGTEntityObserver.m */,
+			);
+			name = "CoreData Utils";
+			sourceTree = "<group>";
+		};
 		32B087C11AD4794900D12298 = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +123,6 @@
 		32B087CC1AD4794900D12298 /* Everpobre */ = {
 			isa = PBXGroup;
 			children = (
-				32B087F31AD4869400D12298 /* AGTCoreDataTableViewController.h */,
-				32B087F41AD4869400D12298 /* AGTCoreDataTableViewController.m */,
 				32B087F01AD47AB900D12298 /* Models */,
 				32B087D11AD4794900D12298 /* AppDelegate.h */,
 				32B087D21AD4794900D12298 /* AppDelegate.m */,
@@ -143,6 +162,7 @@
 		32B087F01AD47AB900D12298 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				32A5BF801AD5ACE400C79713 /* CoreData Utils */,
 				32B088121AD490FE00D12298 /* Machine */,
 				32B088061AD490E300D12298 /* AGTNote.h */,
 				32B088071AD490E300D12298 /* AGTNote.m */,
@@ -150,8 +170,6 @@
 				32B088091AD490E300D12298 /* AGTNoteBook.m */,
 				32B0880A1AD490E300D12298 /* AGTPhoto.h */,
 				32B0880B1AD490E300D12298 /* AGTPhoto.m */,
-				32B087F11AD4869400D12298 /* AGTCoreDataStack.h */,
-				32B087F21AD4869400D12298 /* AGTCoreDataStack.m */,
 				32B087ED1AD47AA800D12298 /* Model.xcdatamodeld */,
 			);
 			name = Models;
@@ -269,14 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A5BF7D1AD5ACCD00C79713 /* AGTCoreDataStack.m in Sources */,
+				32A5BF7C1AD5ACCD00C79713 /* AGTCoreDataCollectionViewController.m in Sources */,
+				32A5BF7E1AD5ACCD00C79713 /* AGTCoreDataTableViewController.m in Sources */,
 				32B087D31AD4794900D12298 /* AppDelegate.m in Sources */,
 				32B088101AD490E300D12298 /* AGTNoteBook.m in Sources */,
-				32B087F61AD4869400D12298 /* AGTCoreDataTableViewController.m in Sources */,
 				32B0880C1AD490E300D12298 /* _AGTNote.m in Sources */,
 				32B0880E1AD490E300D12298 /* _AGTPhoto.m in Sources */,
 				32B087D01AD4794900D12298 /* main.m in Sources */,
-				32B087F51AD4869400D12298 /* AGTCoreDataStack.m in Sources */,
 				32B0880D1AD490E300D12298 /* _AGTNoteBook.m in Sources */,
+				32A5BF7F1AD5ACCD00C79713 /* AGTEntityObserver.m in Sources */,
 				32B0880F1AD490E300D12298 /* AGTNote.m in Sources */,
 				32B087EF1AD47AA800D12298 /* Model.xcdatamodeld in Sources */,
 				32B088111AD490E300D12298 /* AGTPhoto.m in Sources */,
@@ -462,6 +482,7 @@
 				32B087E91AD4794A00D12298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32B087EA1AD4794A00D12298 /* Build configuration list for PBXNativeTarget "EverpobreTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +491,7 @@
 				32B087EC1AD4794A00D12298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
