@@ -18,8 +18,11 @@
 
 @implementation AGTNotesViewController
 -(id) initWithFetchedResultsController:(NSFetchedResultsController *)aFetchedResultsController style:(UITableViewStyle)aStyle notebook:(AGTNoteBook *)notebook{
-    if (self = [super initWithFetchedResultsController:aFetchedResultsController style:aStyle]) {
+    
+    if (self = [super initWithFetchedResultsController:aFetchedResultsController
+                                                 style:aStyle]) {
         _notebook = notebook;
+
     }
     return self;
 }
