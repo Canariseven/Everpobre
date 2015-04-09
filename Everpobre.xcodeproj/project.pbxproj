@@ -26,6 +26,7 @@
 		32B0880F1AD490E300D12298 /* AGTNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B088071AD490E300D12298 /* AGTNote.m */; };
 		32B088101AD490E300D12298 /* AGTNoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B088091AD490E300D12298 /* AGTNoteBook.m */; };
 		32B088111AD490E300D12298 /* AGTPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B0880B1AD490E300D12298 /* AGTPhoto.m */; };
+		32D889D31AD70A54007F6DDA /* AGTNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D889D21AD70A54007F6DDA /* AGTNotesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		32B088091AD490E300D12298 /* AGTNoteBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNoteBook.m; sourceTree = "<group>"; };
 		32B0880A1AD490E300D12298 /* AGTPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTPhoto.h; sourceTree = "<group>"; };
 		32B0880B1AD490E300D12298 /* AGTPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTPhoto.m; sourceTree = "<group>"; };
+		32D889D11AD70A54007F6DDA /* AGTNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTNotesViewController.h; sourceTree = "<group>"; };
+		32D889D21AD70A54007F6DDA /* AGTNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTNotesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				322D05EE1AD5D52B000D8E54 /* CoreData Utils */,
 				322D05EB1AD5D519000D8E54 /* AGTNoteBooksViewController.h */,
 				322D05EC1AD5D519000D8E54 /* AGTNoteBooksViewController.m */,
+				32D889D11AD70A54007F6DDA /* AGTNotesViewController.h */,
+				32D889D21AD70A54007F6DDA /* AGTNotesViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				32B0880E1AD490E300D12298 /* _AGTPhoto.m in Sources */,
 				32A5BF831AD5C26C00C79713 /* AGTEverpobreBaseClass.m in Sources */,
 				322D05ED1AD5D519000D8E54 /* AGTNoteBooksViewController.m in Sources */,
+				32D889D31AD70A54007F6DDA /* AGTNotesViewController.m in Sources */,
 				32B087D01AD4794900D12298 /* main.m in Sources */,
 				32B0880D1AD490E300D12298 /* _AGTNoteBook.m in Sources */,
 				32A5BF7F1AD5ACCD00C79713 /* AGTEntityObserver.m in Sources */,

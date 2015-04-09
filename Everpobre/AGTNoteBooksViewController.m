@@ -44,6 +44,7 @@
 -(void)tableView:(UITableView *)tableView
 commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
 forRowAtIndexPath:(NSIndexPath *)indexPath{
+
     AGTNoteBook *nt = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [self.fetchedResultsController.managedObjectContext deleteObject:nt];
 }

@@ -92,7 +92,7 @@
                                  notebook:exs
                                   context:self.stack.context];
     
-//    NSLog(@"Una nota: %@",vega);
+    //    NSLog(@"Una nota: %@",vega);
     
     // Buscar
     NSFetchRequest *req = [NSFetchRequest
@@ -104,13 +104,15 @@
                             [NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.modificationDate
                                                           ascending:NO]];
     req.fetchBatchSize = 20;
-    req.predicate = [NSPredicate predicateWithFormat:@"notebook = %@",exs];
-    NSArray *results = [self.stack executeFetchRequest:req
-                                            errorBlock:^(NSError *error) {
-                                                NSLog(@"Error al buscar! %@",error.localizedDescription);
-                                            }];
     
-//    NSLog(@"%@",results);
+    req.predicate = [NSPredicate predicateWithFormat:@"notebook = %@",exs];
+    NSArray *results;
+    results = [self.stack executeFetchRequest:req
+                                   errorBlock:^(NSError *error) {
+                                       NSLog(@"Error al buscar! %@",error.localizedDescription);
+                                   }];
+    
+    //    NSLog(@"%@",results);
     
     // Borrar
     [self.stack.context deleteObject:vega];
