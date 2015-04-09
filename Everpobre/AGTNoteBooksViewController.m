@@ -8,6 +8,8 @@
 
 #import "AGTNoteBooksViewController.h"
 #import "AGTNoteBook.h"
+#import "AGTNotesViewController.h"
+#import "AGTNote.h"
 @interface AGTNoteBooksViewController ()
 
 @end
@@ -48,6 +50,36 @@ forRowAtIndexPath:(NSIndexPath *)indexPath{
     AGTNoteBook *nt = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [self.fetchedResultsController.managedObjectContext deleteObject:nt];
 }
+
+#pragma mark - Delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    AGTNoteBook *n = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[AGTNote entityName]];
+                           
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.name
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)],
+                            [NSSortDescriptor sortDescriptorWithKey:AGTNoteAttributes.modificationDate
+                                                          ascending:NO]];
+    req.fetchBatchSize = 20;
+    
+    req.predicate = [NSPredicate predicateWithFormat:@"notebook = %@", n];
+    
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc]
+                                      initWithFetchRequest:req
+                                      managedObjectContext:n.managedObjectContext sectionNameKeyPath:nil
+                                      cacheName:nil];
+
+    AGTNotesViewController * nVC = [[AGTNotesViewController alloc]
+                                    initWithFetchedResultsController:fc
+                                    style:UITableViewStyleGrouped
+                                    notebook:n];
+    [self.navigationController pushViewController:nVC animated:YES];
+    
+    
+}
+
 #pragma mark - Utils
 -(void)addNewNoteBookButton{
     UIBarButtonItem * add = [[UIBarButtonItem alloc]
